@@ -24,6 +24,7 @@ class Product:
     def get_total_price(self):
         return self.price * self.quantity
     # комментарий для конфликта №2
+    # коммент для конфликта №1
     def __lt__(self, other):
         if not isinstance(other, Product):
             return NotImplemented
@@ -41,3 +42,15 @@ class Product:
 
     def __repr__(self):
         return f"Product('{self.name}', {self.price}, {self.quantity})"
+
+    def apply_discount(self, percent):
+        self.price -= self.price * percent / 100
+
+    def check_stock(self):
+        return self.quantity > 0
+
+    def update_stock(self, quantity):
+        if quantity < 0:
+            raise ValueError("Количество не может быть отрицательным")
+
+        self.quantity = quantity

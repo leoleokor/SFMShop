@@ -1,0 +1,9 @@
+raw_name_1 = "ИВАН"
+raw_name_2 = "мария"
+raw_name_3 = "пЕТР"
+formatted_name_1 = raw_name_1.capitalize()
+formatted_name_2 = raw_name_2.capitalize()
+formatted_name_3 = raw_name_3.capitalize()
+print(formatted_name_1)
+print(formatted_name_2)
+print(formatted_name_3)
