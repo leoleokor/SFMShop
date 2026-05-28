@@ -44,3 +44,12 @@ class Product:
 
     def apply_discount(self, percent):
         self.price -= self.price * percent / 100
+
+    def check_stock(self):
+        return self.quantity > 0
+
+    def update_stock(self, quantity):
+        if quantity < 0:
+            raise ValueError("Количество не может быть отрицательным")
+
+        self.quantity = quantity
