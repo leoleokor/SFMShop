@@ -1,0 +1,2 @@
+def cache (**kwargs):
+    pass
