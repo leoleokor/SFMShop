@@ -13,7 +13,7 @@ class User:
         return f'Пользователь: {self.name}, Email: {self._email}'
 
     def set_email(self, email):
-        if '@' not in email:
+        if '@' not in or '.' not in email:
             raise ValidationError("Неверный формат email")
         self._email = email
 
