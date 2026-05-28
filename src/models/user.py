@@ -22,3 +22,5 @@ class User:
 
     def nothing(self):
         return self
+
+# коммент для задания
