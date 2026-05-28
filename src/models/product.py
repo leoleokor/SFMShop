@@ -55,5 +55,7 @@ class Product:
 
         self.quantity = quantity
 
+    def calculate_shipping(self):
+        pass
     def get_category(self):
         pass
