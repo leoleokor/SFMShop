@@ -23,7 +23,7 @@ class Product:
 
     def get_total_price(self):
         return self.price * self.quantity
-
+    # комментарий для конфликта №2
     def __lt__(self, other):
         if not isinstance(other, Product):
             return NotImplemented
