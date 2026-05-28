@@ -1,0 +1,9 @@
+diff --git a/src/utils/cache.py b/src/utils/cache.py
+new file mode 100644
+index 0000000..f811838
+--- /dev/null
++++ b/src/utils/cache.py
+@@ -0,0 +1,2 @@
++def cache (**kwargs):
++    pass
+\ No newline at end of file

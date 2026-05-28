@@ -1,0 +1,5 @@
+Анализ изменений 
+1. Ветка feature/add-logging
+В этой ветке добавлен файл src/utils/logger.py.
+2. Ветка feature/add-caching
+В этой ветке добавлен файл src/utils/cache.py.

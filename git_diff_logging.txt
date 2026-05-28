@@ -1,0 +1,9 @@
+diff --git a/src/utils/logger.py b/src/utils/logger.py
+new file mode 100644
+index 0000000..510993b
+--- /dev/null
++++ b/src/utils/logger.py
+@@ -0,0 +1,2 @@
++def log(message):
++    pass
+\ No newline at end of file
