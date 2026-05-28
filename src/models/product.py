@@ -41,3 +41,6 @@ class Product:
 
     def __repr__(self):
         return f"Product('{self.name}', {self.price}, {self.quantity})"
+
+    def apply_discount(self, percent):
+        self.price -= self.price * percent / 100
