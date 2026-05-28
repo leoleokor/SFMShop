@@ -1,0 +1,24 @@
+from models.exceptions import ValidationError
+
+class User:
+    def __init__(self, name, email):
+        self.name = name
+
+        if "@" not in email:
+            raise ValidationError("Неверный формат email")
+
+        self._email = email
+
+    def get_info(self):
+        return f'Пользователь: {self.name}, Email: {self._email}'
+
+    def set_email(self, email):
+        if '@' not in email:
+            raise ValidationError("Неверный формат email")
+        self._email = email
+
+    def get_email(self):
+        return self._email
+
+    def nothing(self):
+        return self
