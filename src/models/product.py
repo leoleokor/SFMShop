@@ -54,3 +54,6 @@ class Product:
             raise ValueError("Количество не может быть отрицательным")
 
         self.quantity = quantity
+
+    def calculate_shipping(self):
+        pass
